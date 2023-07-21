@@ -9,7 +9,7 @@
 <div>
 	<div class="flex justify-between items-end">
 		<div class="text-3xl font-bold caps">Edición {edicionDisplay}</div>
-		<a target="_blank" href="/src/lib/assets/numeros/{edicion}.pdf">Abrir en una pestaña nueva</a>
+		<a target="_blank" href="/ediciones/{edicion}.pdf">Abrir en una pestaña nueva</a>
 	</div>
 
 	<div class="mx-auto">
@@ -18,7 +18,7 @@
 			width="100%"
 			height="auto"
 			style="aspect-ratio: 210/297"
-			src="/src/lib/assets/numeros/{edicion}.pdf"
+			src="/ediciones/{edicion}.pdf"
 		/>
 	</div>
 </div>
