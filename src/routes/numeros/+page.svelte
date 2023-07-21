@@ -1,10 +1,8 @@
 <script>
 	import Title from '../../lib/Components/Title.svelte';
 	export let data;
-	let ediciones = data.ediciones;
-	ediciones = ediciones.map((x) => x.replace('.pdf', ''));
 
-	console.log(ediciones);
+	let ediciones = data.ediciones.map((x) => x.replace('.pdf', ''));
 
 	let edicionesDisplay = ediciones.map((x) =>
 		x.split('-').slice(-1)[0].split('.')[0].toUpperCase()
