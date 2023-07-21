@@ -1,1 +1,1 @@
-<div class="text-3xl font-bold"><slot /></div>
+<div class="text-5xl font-bold mb-10"><slot /></div>

@@ -3,3 +3,6 @@
 </script>
 
 <Title>Sobre nosotros</Title>
+
+<p>pos aqui iría sobre nosotros</p>
+<p>jaja</p>
