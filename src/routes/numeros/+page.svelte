@@ -14,6 +14,10 @@
 	);
 </script>
 
+<svelte:head>
+	<title>Números — La Sediciosa</title>
+</svelte:head>
+
 <Title>Números</Title>
 
 <div class="text-xl">

@@ -1,8 +1,47 @@
 <script>
+	import Sediciosa from '../../lib/Components/Sediciosa.svelte';
 	import Title from '../../lib/Components/Title.svelte';
 </script>
 
+<svelte:head>
+	<title>Sobre nosotros — La Sediciosa</title>
+</svelte:head>
+
 <Title>Sobre nosotros</Title>
 
-<p>pos aqui iría sobre nosotros</p>
-<p>jaja</p>
+<div class="relative">
+	<img
+		align="right"
+		class="border border-black hover:invert transition-all"
+		width={200}
+		vspace="11"
+		hspace="37"
+		src="/assets/silla.jpg"
+		alt="chair"
+	/>
+	<p class="text-xl text-justify">
+		<Sediciosa /> no es un movimiento emergente, no es una publicación literaria al uso, no es una emulación
+		deforme de las vanguardias del siglo pasado ni una encrucijada de tendencias filosóficas. Mediante
+		esta autodeterminación negativa, pretendemos desprendernos de las categorías más complejas y de las
+		identidades más simples, devenir el horizonte crítico que se opone a lo existente como su <Sediciosa
+		/> es, como reza la biografía de la única red social en la que se publicita y difunde, una revista
+		literaria. Se trata de una publicación que acoge textos de cualquier género y de cualquier temática,
+		con el fin de ofrecer un espacio de visibilidad a todas las creaciones particulares, <Sediciosa
+		/>
+		es la cristalización textual de la vanguardia teórica que constituye el sedicionismo, escisión del
+		insurreccionalismo <Sediciosa /> no es una lista de la compra ni las notas del móvil ni un cuaderno
+		de anillas <Sediciosa />
+		es un dispositivo textual al servicio de <Sediciosa /> es la hoguera perdida que señaliza el camino
+		hacia el olvido que recorren los fragmentos de nuestras almas <Sediciosa /> es un proyecto libre
+		y autogestionado de publicación y difusión de textos de diversa índole, de promoción de la creatividad
+		literaria y de subversión de los estándares actuales.
+	</p>
+	<img
+		class="mx-auto border-black border hover:blur-sm transition-all"
+		width={400}
+		vspace="20"
+		hspace="20"
+		src="/assets/text.jpg"
+		alt="text"
+	/>
+</div>
