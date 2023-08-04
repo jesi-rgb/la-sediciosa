@@ -5,7 +5,6 @@
 		«El acto sedicionista por excelencia consiste en salir a la calle y disparar al azar sobre los
 		transeúntes»
 	</div>
-	<div class="caps font-bold">© La Sediciosa {new Date().getFullYear()}</div>
 </footer>
 
 <style>
