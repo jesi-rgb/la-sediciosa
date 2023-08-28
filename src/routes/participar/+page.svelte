@@ -34,26 +34,22 @@
 		>, tamaño 12 puntos, interlineado 1.15.
 	</li>
 	<li>
-		<span class="ornaments">[</span> Tema, forma, estilo y género literario libres.
-		<span class="ornaments">\</span>
+		<span class="font-ornament">[</span> Tema, forma, estilo y género literario libres.
+		<span class="font-ornament">\</span>
 	</li>
 </ul>
 
 <style>
-	.ornaments {
-		font-family: 'Bodoni Ornaments';
-	}
-
 	ul li::before {
 		position: absolute;
 		content: '8'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
 		display: inline-block; /* Needed to add space between the bullet and the text */
 
 		font-family: 'Bodoni Ornaments';
-		font-size: 0.8em;
+		font-size: 0.7em;
 		font-weight: 800;
 
 		width: 1em; /* Also needed for space (tweak if needed) */
-		left: -0.5em;
+		left: -0.6em;
 	}
 </style>

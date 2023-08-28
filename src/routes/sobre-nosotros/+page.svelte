@@ -1,6 +1,7 @@
 <script>
 	import Sediciosa from '../../lib/Components/Sediciosa.svelte';
 	import Title from '../../lib/Components/Title.svelte';
+	import { Palette, Wrench } from 'phosphor-svelte';
 </script>
 
 <svelte:head>
@@ -12,10 +13,9 @@
 <div class="relative">
 	<img
 		align="right"
-		class="border border-black hover:invert transition-all"
+		class="border border-black hover:invert transition-all ml-5"
 		width={200}
 		vspace="11"
-		hspace="37"
 		src="/assets/silla.jpg"
 		alt="chair"
 	/>
@@ -44,4 +44,12 @@
 		src="/assets/text.jpg"
 		alt="text"
 	/>
+</div>
+
+<div class="mt-10">
+	<span class="inline-block -my-0.5"><Wrench weight="fill" /></span> Desarrollo de la plataforma y
+	<span class="inline-block -my-1 mr-0.5"><Palette weight="fill" /></span>diseño por
+	<a class="underline hover:text-neutral-400 transition-colors" href="https://jesirgb.com"
+		>Jesús Rascón</a
+	>.
 </div>
