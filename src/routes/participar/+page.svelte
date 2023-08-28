@@ -14,7 +14,7 @@
 	Algunas guías relativamente relajadas acerca de cómo exponer tu trabajo en <Sediciosa />.
 </div>
 
-<ul class="text-2xl list-none flex flex-col space-y-4">
+<ul class="text-2xl list-none flex flex-col space-y-4 relative">
 	<li>
 		Envía dos documentos <span class="inline-block -my-1"
 			><MicrosoftWordLogo weight="duotone" /></span
@@ -45,15 +45,15 @@
 	}
 
 	ul li::before {
+		position: absolute;
 		content: '8'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
 		display: inline-block; /* Needed to add space between the bullet and the text */
 
 		font-family: 'Bodoni Ornaments';
 		font-size: 0.8em;
+		font-weight: 800;
 
 		width: 1em; /* Also needed for space (tweak if needed) */
-
-		margin-left: -1em; /* Also needed for space (tweak if needed) */
-		margin-right: 0em;
+		left: -0.5em;
 	}
 </style>
