@@ -1,11 +1,7 @@
 <script>
 	import Title from '../../lib/Components/Title.svelte';
 
-	let dataEdiciones = [
-		'la-sediciosa-01-marzo.pdf',
-		'la-sediciosa-02-abril.pdf',
-		'la-sediciosa-03-mayo.pdf'
-	];
+	let dataEdiciones = ['la-sediciosa-01-marzo.pdf'];
 
 	let ediciones = dataEdiciones.map((x) => x.replace('.pdf', ''));
 
@@ -16,6 +12,23 @@
 
 <svelte:head>
 	<title>Números — La Sediciosa</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+
+	<meta property="og:title" content="Números — La Sediciosa" />
+	<meta property="og:type" content="magazine" />
+	<meta property="og:url" content="https://la-sediciosa.vercel.app/numeros" />
+	<meta property="og:image" content="https://la-sediciosa.vercel.app/sediciosa-banner.png" />
+	<meta
+		property="og:description"
+		content="Lista exhaustiva de los números publicados hasta ahora"
+	/>
 </svelte:head>
 
 <Title>Números</Title>
