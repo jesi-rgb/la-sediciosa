@@ -1,7 +1,7 @@
 <script>
 	import Title from '../../lib/Components/Title.svelte';
 
-	let dataEdiciones = ['la-sediciosa-01-marzo.pdf'];
+	let dataEdiciones = ['la-sediciosa-01-marzo.pdf', 'la-sediciosa-02-agosto.pdf'];
 
 	let ediciones = dataEdiciones.map((x) => x.replace('.pdf', ''));
 
@@ -33,25 +33,31 @@
 
 <Title>Números</Title>
 
-<div class="text-xl">
-	Una lista exhaustiva de las diferentes ediciones de <span class="caps">La Sediciosa</span>
-</div>
-<div class="mt-10 text-xl text-gray-400 w-1/2">
-	Nota: ahora mismo todas apuntan a la de marzo, pero así se deja entrever cómo esta lustrosa lista
-	de ediciones podría lucir en el futuro
-</div>
+<div class="flex flex-col md:flex-row items-start gap-8">
+	<div>
+		<div class="text-xl">
+			Una lista exhaustiva de las diferentes ediciones de <span class="caps">La Sediciosa</span>
+		</div>
 
-<ul class="mt-10 text-xl">
-	{#each ediciones as n, i}
-		<a href="/numeros/{n}">
-			<li class="flex space-x-1 text-3xl">
-				<div class="caps">La Sediciosa</div>
-				<div>—</div>
-				<div class="font-bold">{edicionesDisplay[i]}</div>
-			</li>
-		</a>
-	{/each}
-</ul>
+		<ul class="mt-10 text-xl mb-20 md:mb-0">
+			{#each ediciones as n, i}
+				<a href="/numeros/{n}">
+					<li class="flex space-x-1 text-3xl mb-2">
+						<div class="font-ornament">[</div>
+						<div class="caps">La Sediciosa</div>
+						<div>—</div>
+						<div class="font-bold">{edicionesDisplay[i]}</div>
+					</li>
+				</a>
+			{/each}
+		</ul>
+	</div>
+	<img
+		class="border-black border hover:blur-sm w-[80%] md:w-1/3 transition-all mx-auto md:mx-0"
+		src="/assets/text.jpg"
+		alt="text"
+	/>
+</div>
 
 <style>
 	.caps {

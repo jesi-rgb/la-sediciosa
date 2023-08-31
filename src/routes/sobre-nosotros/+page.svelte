@@ -53,14 +53,6 @@
 		y autogestionado de publicación y difusión de textos de diversa índole, de promoción de la creatividad
 		literaria y de subversión de los estándares actuales.
 	</p>
-	<img
-		class="mx-auto border-black border hover:blur-sm transition-all"
-		width={400}
-		vspace="20"
-		hspace="20"
-		src="/assets/text.jpg"
-		alt="text"
-	/>
 </div>
 
 <div class="mt-10">

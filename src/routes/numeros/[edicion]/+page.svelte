@@ -1,4 +1,6 @@
 <script>
+	import { ArrowBendLeftUp, ArrowUpRight, FilePdf } from 'phosphor-svelte';
+
 	export let data;
 	let edicion = data.edicion;
 	let edicionDisplay = edicion.split('-').slice(-1);
@@ -25,7 +27,12 @@
 <div>
 	<div class="flex justify-between items-end">
 		<div class="text-3xl font-bold caps">Edición {edicionDisplay[0]}</div>
-		<a target="_blank" href="/ediciones/{edicion}.pdf">Abrir en una pestaña nueva</a>
+		<a target="_blank" class="group" href="/ediciones/{edicion}.pdf"
+			>Abrir en una pestaña nueva <span
+				class="inline-block align-middle group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
+				><ArrowUpRight /></span
+			>
+		</a>
 	</div>
 
 	<div class="mx-auto">
