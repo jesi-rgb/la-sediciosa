@@ -27,10 +27,13 @@
 <div>
 	<div class="flex justify-between items-end">
 		<div class="text-3xl font-bold caps">Edición {edicionDisplay[0]}</div>
-		<a target="_blank" class="group" href="/ediciones/{edicion}.pdf"
-			>Abrir en una pestaña nueva <span
+		<a
+			target="_blank"
+			class="group font-bold px-2 py-1 bg-white border-2 border-black rounded-sm relative before:absolute before:top-[5px] before:left-[5px] before:rounded-sm before:w-full before:h-full before:bg-black before:z-[-1]"
+			href="/ediciones/{edicion}.pdf"
+			>Abrir <span
 				class="inline-block align-middle group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
-				><ArrowUpRight /></span
+				><ArrowUpRight weight="bold" /></span
 			>
 		</a>
 	</div>
@@ -40,6 +43,7 @@
 			class="mx-auto my-5 border-4 rounded-xl border-black"
 			width="100%"
 			height="auto"
+			title="pdf"
 			style="aspect-ratio: 210/297"
 			src="/ediciones/{edicion}.pdf"
 		/>

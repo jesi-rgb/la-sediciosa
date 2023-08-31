@@ -39,10 +39,10 @@
 			Una lista exhaustiva de las diferentes ediciones de <span class="caps">La Sediciosa</span>
 		</div>
 
-		<ul class="mt-10 text-xl mb-20 md:mb-0">
+		<ul class="mt-10 mb-20 md:mb-0">
 			{#each ediciones as n, i}
 				<a href="/numeros/{n}">
-					<li class="flex space-x-1 text-3xl mb-2">
+					<li class="flex space-x-1 text-2xl md:text-3xl mb-2">
 						<div class="font-ornament">[</div>
 						<div class="caps">La Sediciosa</div>
 						<div>—</div>
