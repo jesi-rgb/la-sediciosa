@@ -1,7 +1,11 @@
 <script>
 	import Title from '../../lib/Components/Title.svelte';
 
-	let dataEdiciones = ['la-sediciosa-01-marzo.pdf', 'la-sediciosa-02-agosto.pdf'];
+	let dataEdiciones = [
+		'la-sediciosa-01-marzo.pdf',
+		'la-sediciosa-02-agosto.pdf',
+		'la-sediciosa-03-octubre.pdf'
+	];
 
 	let ediciones = dataEdiciones.map((x) => x.replace('.pdf', ''));
 
