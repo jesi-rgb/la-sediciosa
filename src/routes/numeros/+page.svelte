@@ -4,7 +4,8 @@
 	let dataEdiciones = [
 		'la-sediciosa-01-marzo.pdf',
 		'la-sediciosa-02-agosto.pdf',
-		'la-sediciosa-03-octubre.pdf'
+		'la-sediciosa-03-octubre.pdf',
+		'la-sediciosa-04-diciembre.pdf'
 	];
 
 	let ediciones = dataEdiciones.map((x) => x.replace('.pdf', ''));
