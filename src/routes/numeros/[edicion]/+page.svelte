@@ -1,5 +1,7 @@
 <script>
-	import { ArrowBendLeftUp, ArrowUpRight, FilePdf } from 'phosphor-svelte';
+	import ArrowBendLeftUp from 'phosphor-svelte/lib/ArrowBendLeftUp';
+	import ArrowUpRight from 'phosphor-svelte/lib/ArrowUpRight';
+	import FilePdf from 'phosphor-svelte/lib/FilePdf';
 
 	export let data;
 	let edicion = data.edicion;

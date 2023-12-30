@@ -1,7 +1,8 @@
 <script>
 	import Sediciosa from '../../lib/Components/Sediciosa.svelte';
 	import Title from '../../lib/Components/Title.svelte';
-	import { Palette, Wrench } from 'phosphor-svelte';
+	import Palette from 'phosphor-svelte/lib/Palette';
+	import Wrench from 'phosphor-svelte/lib/Wrench';
 </script>
 
 <svelte:head>

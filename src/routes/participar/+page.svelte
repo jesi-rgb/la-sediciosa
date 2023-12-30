@@ -1,7 +1,11 @@
 <script>
 	import Title from '../../lib/Components/Title.svelte';
 	import Sediciosa from '../../lib/Components/Sediciosa.svelte';
-	import { At, Envelope, EnvelopeOpen, MicrosoftWordLogo, TextAa } from 'phosphor-svelte';
+	import At from 'phosphor-svelte/lib/At';
+	import Envelope from 'phosphor-svelte/lib/Envelope';
+	import EnvelopeOpen from 'phosphor-svelte/lib/EnvelopeOpen';
+	import MicrosoftWordLogo from 'phosphor-svelte/lib/MicrosoftWordLogo';
+	import TextAa from 'phosphor-svelte/lib/TextAa';
 </script>
 
 <svelte:head>
